@@ -6,8 +6,218 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jurassic Park</title>
     <link rel="stylesheet" href="dist/css/main.css" />
+    <link
+      rel="shortcut icon"
+      href="./dist/images/Jurassic_Park_logo.png"
+      type="image/x-icon"
+    />
   </head>
   <body>
-    Olá
+    <header class="header">
+      <div class="header__container">
+        <h1>
+          <img
+            class="header__logo"
+            src="./dist/images/Jurassic_Park_logo.png"
+            alt="Logo Jurassic Park"
+          />
+        </h1>
+        <ul class="header__links">
+          <li class="header__links__item">
+            <a href="#galeria" class="button button--dark">galeria</a>
+          </li>
+          <li class="header__links__item">
+            <a href="#resumo" class="button button--dark">resumo</a>
+          </li>
+          <li class="header__links__item">
+            <a href="#cast" class="button button--dark">cast</a>
+          </li>
+          <li class="header__links__item">
+            <a href="#trailer" class="button button--dark">trailer</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <section class="hero">
+      <div class="hero__content">
+        <h1 class="title--big">
+          De acordo com os especialistas, "um dos melhores filmes do século."
+        </h1>
+      </div>
+    </section>
+    <section class="galeria" id="galeria">
+      <h2 class="title--big">Galeria</h2>
+      <nav class="galeria__tabs">
+        <button
+          data-tab-button="dinossauros"
+          class="galeria__tabs__button galeria__tabs__button--is-active"
+        >
+          Dinossauros
+        </button>
+        <button data-tab-button="elenco" class="galeria__tabs__button">
+          Elenco
+        </button>
+      </nav>
+      <ul
+        data-tab-id="dinossauros"
+        class="galeria__list galeria__list--is-active"
+      >
+        <li class="galeria__list__item">
+          <img src="./dist/images/raptor.webp" alt="Velociraptor" />
+        </li>
+        <li class="galeria__list__item">
+          <img src="./dist/images/trex.jfif" alt="T-Rex" />
+        </li>
+        <li class="galeria__list__item">
+          <img src="./dist/images/trex2.webp" alt="Sem limites" />
+        </li>
+      </ul>
+      <ul data-tab-id="elenco" class="galeria__list">
+        <li class="galeria__list__item">
+          <img src="./dist/images/allan.webp" alt="Allan Grant" />
+        </li>
+        <li class="galeria__list__item">
+          <img src="./dist/images/ellie.png" alt="Ellie Satler" />
+        </li>
+        <li class="galeria__list__item">
+          <img src="./dist/images/goldblum.png" alt="Ian Malcolm" />
+        </li>
+      </ul>
+    </section>
+    <section class="cast" id="resumo">
+      <h2 class="title--big">Resumo</h2>
+      <p class="text--big">
+        Os paleontólogos Alan Grant, Ellie Sattler e o matemático Ian Malcolm
+        fazem parte de um seleto grupo escolhido para visitar uma ilha habitada
+        por dinossauros criados a partir de DNA pré-histórico. O idealizador do
+        projeto e bilionário John Hammond garante a todos que a instalação é
+        completamente segura. Mas após uma queda de energia, os visitantes
+        descobrem, aos poucos, que vários predadores ferozes estão soltos e à
+        caça.
+      </p>
+    </section>
+    <div class="cast">
+      <h2 class="title">Cast</h2>
+    </div>
+    <section class="image-text-section">
+      <img src="./dist/images/JeffGoldblum.jpg" alt="Jeff Goldblum" />
+      <div class="image-text-section__text-container">
+        <h2 class="title">Jeff Goldblum</h2>
+        <p class="text--big">
+          interpreta Ian Malcolm, um matemático e teórico do caos.
+        </p>
+      </div>
+    </section>
+    <section class="image-text-section">
+      <img src="./dist/images/lauradern.jpg" alt="Laura Dern" />
+      <div class="image-text-section__text-container">
+        <h2 class="title">Laura Dern</h2>
+        <p class="text--big">
+          interpreta Dra. Ellie Sattler, uma paleobotânica e aluna graduada de
+          Grant.
+        </p>
+      </div>
+    </section>
+    <section class="image-text-section">
+      <img src="./dist/images/samneil.jpg" alt="Sam Neil" />
+      <div class="image-text-section__text-container">
+        <h2 class="title">Sam Neil</h2>
+        <p class="text--big">
+          interpreta Dr. Alan Grant, um paleontólogo, que no início do filme
+          trabalha em escavações num deserto de Montana. Ele não gosta de
+          crianças, em particular, mas protege os netos de Hammond no decorrer
+          da história. Neill foi a primeira escolha de Spielberg para o papel,
+          mas ele não aceitou, porque estava ocupado na época. Spielberg, então,
+          convidou o ator William Hurt, mas ele recusou mesmo sem ler o roteiro,
+          e até mesmo Harrison Ford não aceitou a proposta.
+        </p>
+      </div>
+    </section>
+    <section
+      class="image-text-section image-text-section--image-full-width"
+      id="trailer"
+    >
+      <picture>
+        <source
+          media="(max-width: 768px)"
+          srcset="./dist/images/trailercel.png"
+        />
+        <a
+          href="https://www.youtube.com/watch?v=lc0UehYemQA&pp=ygUVdHJhaWxlciBqdXJhc3NpYyBwYXJr"
+        >
+          <img src="./dist/images/trailer.png" alt="Trailer" />
+        </a>
+      </picture>
+      <div
+        class="image-text-section__text-container image-text-section--image-full-width__text_container"
+      >
+        <h2 class="title">Assista ao trailer</h2>
+        <p class="text--big">Clique na imagem e assista ao trailer</p>
+      </div>
+    </section>
+    <section class="onde-assistir">
+      <h2 class="title">Confira onde assistir</h2>
+      <ul class="onde-assistir__list">
+        <li class="onde-assistir__list__item">
+          <img src="./dist/images/Netflix-new-icon.png" alt="Netflix" />
+          <h4 class="title--small">Netflix</h4>
+        </li>
+        <li class="onde-assistir__list__item">
+          <img src="./dist/images/globoplaylogo.png" alt="Globoplay" />
+          <h4 class="title--small">Gloplay</h4>
+        </li>
+        <li class="onde-assistir__list__item">
+          <img src="./dist/images/primevideologo.png" alt="Prime Video" />
+          <h4 class="title--small">Prime Video</h4>
+        </li>
+        <li class="onde-assistir__list__item">
+          <img src="./dist/images/starpluslogo.jpeg" alt="Star+" />
+          <h4 class="title--small">Star+</h4>
+        </li>
+      </ul>
+    </section>
+    <footer class="footer">
+      <div class="footer__container">
+        <img
+          class="footer__logo"
+          src="./dist/images/Jurassic_Park_logo.png"
+          alt="Logo Disney+"
+        />
+        <ul class="footer__links">
+          <li class="footer__links__item">
+            <div class="language-selector">
+              <img src="./dist/images/icones/globe.svg" alt="Globo" />
+              <select>
+                <option>English</option>
+                <option selected>Português</option>
+              </select>
+            </div>
+          </li>
+          <li class="footer__links__item">
+            <a href="#" class="text--small">Termos e condições de uso</a>
+          </li>
+          <li class="footer__links__item">
+            <a href="#" class="text--small">Política de privacidade</a>
+          </li>
+          <li class="footer__links__item">
+            <a href="#" class="text--small">Proteção de Dados no Brasil</a>
+          </li>
+          <li class="footer__links__item">
+            <a href="#" class="text--small">Anúncios personalizados</a>
+          </li>
+          <li class="footer__links__item">
+            <a href="#" class="text--small">Ajuda</a>
+          </li>
+          <li class="footer__links__item">
+            <a href="#" class="text--small">Sobre o Jurassic Park</a>
+          </li>
+        </ul>
+        <p class="text--small">
+          ® 2023 Jurassic Park. Todos os direitos reservados.
+        </p>
+      </div>
+    </footer>
+
+    <script src="./dist/js/main.js"></script>
   </body>
 </html>
